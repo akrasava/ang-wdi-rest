@@ -1,7 +1,7 @@
 {
   "name": "wdi-rest",
   "description": "WDI Angular REST component",
-  "main": "index.js",
+  "main": "rest-client",
   "authors": [
     "Alex Krasavtsev"
   ],
@@ -18,7 +18,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.9",
-    "angular-mocks": "~1.4.9"
-  }
+    "angular": "1.4.9",
+    "angular-mocks": "1.4.9"
+  },
+  "keywords": [
+    "REST",
+    "Angular"
+  ]
 }
