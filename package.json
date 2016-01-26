@@ -1,0 +1,25 @@
+{
+  "name": "wdi-rest",
+  "version": "1.0.0",
+  "description": "WDI Angular REST component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.webdesigninspirations.com:wdi-angular-components/wdi-rest.git"
+  },
+  "author": "Alex Krasavtsev",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chai": "^0.1.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-mocha": "^0.2.1",
+    "mocha": "^2.4.1",
+    "phantomjs": "^2.1.2"
+  }
+}
