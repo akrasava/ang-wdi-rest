@@ -1,5 +1,5 @@
 {
-  "name": "wdi-rest",
+  "name": "ang-wdi-rest",
   "description": "WDI Angular REST component",
   "main": "rest-client",
   "authors": [

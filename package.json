@@ -1,6 +1,6 @@
 {
-  "name": "wdi-rest",
-  "version": "1.0.1",
+  "name": "ang-wdi-rest",
+  "version": "1.0.2",
   "description": "WDI Angular REST component",
   "main": "index.js",
   "scripts": {
