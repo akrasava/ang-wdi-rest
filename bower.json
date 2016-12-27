@@ -18,11 +18,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.4.9",
-    "angular-mocks": "1.4.9"
+    "angular": "1.5.8"
   },
   "keywords": [
     "REST",
     "Angular"
-  ]
+  ],
+  "version": "1.0.3"
 }
