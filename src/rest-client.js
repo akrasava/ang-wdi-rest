@@ -9,7 +9,21 @@ angular.module('wdi.restClient', []).factory('restClient', [
   ) {
 
     var restClient = {
-      baseUrl: ''
+      baseUrl: '',
+      authToken: null
+    };
+
+    /**
+    *  Sets Authorization header.
+    *   
+    *  @method setAuthHeader
+    *  @memberof restClient
+    *  @param  {object} JWT Token
+    */
+    restClient.setAuthHeader = function(token) {
+      this.authToken = token;
+
+      $http.defaults.headers.common.Authorization = 'Bearer ' + this.authToken;
     };
 
     /**
