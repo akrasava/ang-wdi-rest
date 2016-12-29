@@ -10,7 +10,7 @@ angular.module('wdi.restClient', []).factory('restClient', [
 
     var restClient = {
       baseUrl: '',
-      authToken: null
+      jwtToken: null
     };
 
     /**
@@ -20,10 +20,23 @@ angular.module('wdi.restClient', []).factory('restClient', [
     *  @memberof restClient
     *  @param  {object} JWT Token
     */
-    restClient.setAuthHeader = function(token) {
-      this.authToken = token;
+    restClient.setAuthHeader = function(jwtToken) {
+      this.jwtToken = jwtToken;
 
       $http.defaults.headers.common.Authorization = 'Bearer ' + this.authToken;
+    };
+
+    /**
+    *  Removes Authorization header.
+    *   
+    *  @method removeAuthHeader
+    *  @memberof restClient
+    *  @param  {object} JWT Token
+    */
+    restClient.removeAuthHeader = function() {
+      this.jwtToken = null;
+
+      delete $http.defaults.headers.common.Authorization;
     };
 
     /**
