@@ -23,7 +23,7 @@ angular.module('wdi.restClient', []).factory('restClient', [
     restClient.setAuthHeader = function(jwtToken) {
       this.jwtToken = jwtToken;
 
-      $http.defaults.headers.common.Authorization = 'Bearer ' + this.authToken;
+      $http.defaults.headers.common.Authorization = 'Bearer ' + this.jwtToken;
     };
 
     /**
