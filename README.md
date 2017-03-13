@@ -28,7 +28,7 @@ You can set and remove Authorization headers with following methods:
     restClient.setAuthHeader('app-jwt-token');
     estClient.removeAuthHeader();
 
-Once loged in, execute `setAuthHeader`
+Once loged in, execute `setAuthHeader()` method:
 
     restClient.setAuthHeader('app-jwt-token');
 
@@ -38,17 +38,19 @@ This will add following header to each `http` request:
 
 where `your-jwt-token` is an authorization JWT token returned by your API server.
 
+When logged out, execute `removeAuthHeader()`.
+
 
 ### Methods
 
-Client gives you following methods:
+REST client gives you following HTTP methods:
 
     restClient.get(request)
     restClient.post(request)
     restClient.put(request)
     restClient.delete(request)
 
-`request` is following object:
+`request` is an object with following structure:
 
     {
       path: 'path'
@@ -57,5 +59,9 @@ Client gives you following methods:
 
 where:
 
-* path - REST path (i.g. `/user/login`)
-* request - JSON object to be passed to server
+* **path** - REST path (i.g. `/user/login`)
+* *request* (optional) - JSON object to be passed to server
+
+### Results
+
+Each REST method returns Promise object and data without any manipulations.
