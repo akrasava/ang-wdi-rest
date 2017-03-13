@@ -64,4 +64,4 @@ where:
 
 ### Results
 
-Each REST method returns Promise object and data without any manipulations.
+Each REST method returns Promise object, which passes data without any manipulations.
